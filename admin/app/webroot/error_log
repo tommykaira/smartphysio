@@ -1,0 +1,29 @@
+[07-Feb-2013 00:47:38] PHP Parse error:  syntax error, unexpected '<' in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 11
+[07-Feb-2013 00:48:52] PHP Parse error:  syntax error, unexpected '<' in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 11
+[07-Feb-2013 00:50:27] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 22
+[07-Feb-2013 00:50:45] PHP Fatal error:  Call to a member function input() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 23
+[08-Feb-2013 04:22:55] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Users/index.ctp on line 5
+[08-Feb-2013 04:31:29] PHP Parse error:  syntax error, unexpected '<' in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 20
+[08-Feb-2013 05:06:39] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 20
+[08-Feb-2013 05:30:33] PHP Fatal error:  [MissingControllerException] Controller class UserControllerController could not be found.
+#0 /home/bulacs/public_html/smartphysio/admin/lib/Cake/Core/Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp(10): Object->requestAction(Array)
+#2 /home/bulacs/public_html/smartphysio/admin/lib/Cake/View/View.php(920): include('/home/bulacs/pu...')
+#3 /home/bulacs/public_html/smartphysio/admin/lib/Cake/View/View.php(883): View->_evaluate('/home/bulacs/pu...', Array)
+#4 /home/bulacs/public_html/smartphysio/admin/lib/Cake/View/View.php(424): View->_render('/home/bulacs/pu...', Array)
+#5 /home/bulacs/public_html/smartphysio/admin/app/View/Layouts/gebo.ctp(220): View->element('sidebar')
+#6 /home/bulacs/public_html/smartphysio/admin/lib/Cake/View/View.php(920): include('/home/bulacs/pu...')
+#7 /home/bulacs/public_html/smartphysio/admin/lib/Cake/View/View.php(883): View->_evaluate('/home/bulacs/pu...', Array)
+#8 /h in /home/bulacs/public_html/smartphysio/admin/lib/Cake/Error/ErrorHandler.php on line 136
+[08-Feb-2013 05:31:34] PHP Fatal error:  Call to undefined method View::create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:32:14] PHP Fatal error:  Call to undefined method View::create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:33:51] PHP Fatal error:  Call to undefined function  create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:33:56] PHP Fatal error:  Call to undefined function  create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:34:40] PHP Fatal error:  Call to undefined function  create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:34:43] PHP Fatal error:  Call to undefined function  create() in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 10
+[08-Feb-2013 05:36:05] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 11
+[08-Feb-2013 05:57:45] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 20
+[08-Feb-2013 05:58:16] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Elements/sidebar.ctp on line 20
+[08-Feb-2013 06:58:27] PHP Fatal error:  Call to a member function create() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/View/Users/edit.ctp on line 19
+[09-Feb-2013 12:27:37] PHP Fatal error:  Call to a member function write() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/Controller/WebAdminsController.php on line 23
+[09-Feb-2013 12:28:19] PHP Fatal error:  Call to a member function write() on a non-object in /home/bulacs/public_html/smartphysio/admin/app/Controller/WebAdminsController.php on line 23

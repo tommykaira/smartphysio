@@ -1,0 +1,109 @@
+[25-Oct-2012 21:15:41] PHP Fatal error:  Cannot access empty property in /home2/smartphy/public_html/admin/api/app/Config/database.php on line 28
+[08-Nov-2012 07:44:21] PHP Fatal error:  Call to undefined method MailComponent::_lostPasswordMessage() in /home2/smartphy/public_html/admin/api/app/Controller/Component/MailComponent.php on line 19
+[08-Nov-2012 07:59:56] PHP Fatal error:  Call to undefined method MailSmartyComponent::_lostPasswordMessage() in /home2/smartphy/public_html/admin/api/app/Controller/Component/MailSmartyComponent.php on line 19
+[20-Nov-2012 10:52:49] PHP Warning:  POST Content-Length of 12588673 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[20-Nov-2012 10:54:22] PHP Warning:  POST Content-Length of 14415169 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[20-Nov-2012 10:59:55] PHP Warning:  POST Content-Length of 14415169 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[20-Nov-2012 10:59:57] PHP Warning:  POST Content-Length of 14415169 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[20-Nov-2012 10:59:57] PHP Warning:  POST Content-Length of 14415169 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 07:58:43] PHP Warning:  POST Content-Length of 12920197 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 08:01:21] PHP Warning:  POST Content-Length of 12920197 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 08:05:44] PHP Warning:  POST Content-Length of 13968456 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 08:11:13] PHP Warning:  POST Content-Length of 13968456 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 08:14:22] PHP Warning:  POST Content-Length of 13968456 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 08:18:00] PHP Warning:  POST Content-Length of 13968456 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Jan-2013 11:30:25] PHP Warning:  POST Content-Length of 15636474 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[04-Jan-2013 11:10:55] PHP Warning:  POST Content-Length of 14246387 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[04-Jan-2013 11:12:28] PHP Warning:  POST Content-Length of 14246387 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[04-Jan-2013 11:21:19] PHP Warning:  POST Content-Length of 11195102 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[04-Jan-2013 11:26:30] PHP Warning:  POST Content-Length of 9936075 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[04-Jan-2013 11:31:28] PHP Warning:  POST Content-Length of 11044832 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 07:10:41] PHP Warning:  POST Content-Length of 13238499 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 10:12:33] PHP Warning:  POST Content-Length of 18000053 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:16:05] PHP Warning:  POST Content-Length of 14014392 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:19:12] PHP Warning:  POST Content-Length of 14014392 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:20:11] PHP Warning:  POST Content-Length of 14014392 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:20:24] PHP Warning:  POST Content-Length of 14014392 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:23:00] PHP Warning:  POST Content-Length of 10224661 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:38:47] PHP Warning:  POST Content-Length of 10224661 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 11:45:10] PHP Warning:  POST Content-Length of 10224661 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 12:15:08] PHP Warning:  POST Content-Length of 12968171 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 12:18:44] PHP Warning:  POST Content-Length of 12968171 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[07-Jan-2013 14:32:07] PHP Warning:  POST Content-Length of 12968171 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[08-Jan-2013 09:30:38] PHP Warning:  POST Content-Length of 49991567 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[08-Jan-2013 09:46:33] PHP Warning:  POST Content-Length of 39207196 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[15-Jan-2013 19:08:38] PHP Warning:  POST Content-Length of 36261409 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[24-Jan-2013 18:46:25] PHP Warning:  POST Content-Length of 39810833 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[24-Jan-2013 23:19:05] PHP Warning:  POST Content-Length of 44182014 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[24-Jan-2013 23:36:04] PHP Warning:  POST Content-Length of 42022011 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[25-Jan-2013 00:24:33] PHP Warning:  POST Content-Length of 28323335 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[25-Jan-2013 19:43:53] PHP Warning:  POST Content-Length of 40636955 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[25-Jan-2013 20:13:22] PHP Warning:  POST Content-Length of 32689745 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[25-Jan-2013 20:44:55] PHP Warning:  POST Content-Length of 32004311 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[25-Jan-2013 20:57:59] PHP Warning:  POST Content-Length of 32004311 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 12:52:05] PHP Warning:  POST Content-Length of 41516400 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 18:55:44] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home2/smartphy/public_html/admin/api/app/Controller/UsersController.php on line 355
+[26-Jan-2013 18:59:10] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home2/smartphy/public_html/admin/api/app/Controller/UsersController.php on line 355
+[26-Jan-2013 20:46:43] PHP Warning:  POST Content-Length of 18983994 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 21:02:37] PHP Warning:  POST Content-Length of 18983994 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 21:14:05] PHP Warning:  POST Content-Length of 37361526 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 21:28:07] PHP Warning:  POST Content-Length of 37361526 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[26-Jan-2013 21:47:00] PHP Warning:  POST Content-Length of 37361526 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 11:12:45] PHP Warning:  POST Content-Length of 48325940 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 11:28:28] PHP Warning:  POST Content-Length of 44359379 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 11:29:29] PHP Warning:  POST Content-Length of 44359379 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 16:01:34] PHP Warning:  POST Content-Length of 42789416 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 16:16:53] PHP Warning:  POST Content-Length of 42051405 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 16:25:23] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 16:47:16] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 16:58:23] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 17:22:40] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 17:45:20] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 18:04:24] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Jan-2013 18:32:23] PHP Warning:  POST Content-Length of 35028580 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 13:30:39] PHP Warning:  POST Content-Length of 37606641 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 13:46:25] PHP Warning:  POST Content-Length of 47038061 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 14:01:04] PHP Warning:  POST Content-Length of 47038061 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 14:01:05] PHP Warning:  POST Content-Length of 47038061 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 14:01:41] PHP Warning:  POST Content-Length of 47038061 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 14:33:01] PHP Warning:  POST Content-Length of 43947795 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[30-Jan-2013 14:51:03] PHP Warning:  POST Content-Length of 43580542 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Feb-2013 04:39:37] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ')' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 37
+[12-Feb-2013 06:06:56] PHP Parse error:  syntax error, unexpected ',' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 108
+[28-Feb-2013 06:51:31] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:00:31] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:01:04] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:01:17] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:01:28] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:02:00] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 143
+[28-Feb-2013 07:23:47] PHP Parse error:  syntax error, unexpected T_ECHO in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 73
+[28-Feb-2013 07:24:21] PHP Parse error:  syntax error, unexpected T_ECHO in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 73
+[28-Feb-2013 07:24:52] PHP Parse error:  syntax error, unexpected T_ECHO in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 73
+[28-Feb-2013 07:25:28] PHP Parse error:  syntax error, unexpected T_ECHO in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 73
+[28-Feb-2013 07:29:11] PHP Parse error:  syntax error, unexpected '"' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 63
+[28-Feb-2013 07:30:15] PHP Parse error:  syntax error, unexpected '"' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 63
+[28-Feb-2013 07:44:45] PHP Warning:  Unterminated comment starting line 132 in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 132
+[28-Feb-2013 07:44:45] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/Component/MailSmartyComponent.php on line 132
+[28-Feb-2013 23:59:33] PHP Fatal error:  Call to undefined method MailSmartyComponent::sendPassword() in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 165
+[01-Mar-2013 01:37:47] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 733
+[01-Mar-2013 01:37:47] PHP Parse error:  syntax error, unexpected T_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 733
+[01-Mar-2013 01:38:23] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 733
+[01-Mar-2013 01:38:23] PHP Parse error:  syntax error, unexpected T_STRING in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 733
+[01-Mar-2013 05:00:07] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:01:17] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:05:38] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:06:53] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:08:37] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:10:56] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:12:01] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:12:50] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:12:54] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:13:52] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[01-Mar-2013 05:14:49] PHP Parse error:  syntax error, unexpected '}' in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 785
+[07-Mar-2013 22:13:20] PHP Warning:  unlink(/home/bulacs/public_html/smartphysio/admin/api/app/tmp/cache/models/myapp_cake_model_default_bulacs_db_practice_logos) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/bulacs/public_html/smartphysio/admin/api/lib/Cake/Cache/Engine/FileEngine.php on line 254
+[21-Mar-2013 02:57:26] PHP Parse error:  syntax error, unexpected T_IF in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 163
+[21-Mar-2013 02:59:15] PHP Fatal error:  Call to a member function findByEmail() on a non-object in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 786
+[21-Mar-2013 03:00:41] PHP Fatal error:  Call to a member function find() on a non-object in /home/bulacs/public_html/smartphysio/admin/api/app/Controller/UsersController.php on line 786
+[21-Mar-2013 03:08:52] PHP Parse error:  syntax error, unexpected $end in /home/bulacs/public_html/smartphysio/admin/api/app/View/Users/retreive_all_email.ctp on line 1
+[23-Mar-2013 00:50:00] PHP Warning:  unlink(/home/bulacs/public_html/smartphysio/admin/api/app/tmp/cache/persistent/myapp_cake_core_method_cache) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/bulacs/public_html/smartphysio/admin/api/lib/Cake/Cache/Engine/FileEngine.php on line 254
+[23-Mar-2013 00:50:00] PHP Warning:  unlink(/home/bulacs/public_html/smartphysio/admin/api/app/tmp/cache/models/myapp_cake_model_default_bulacs_db_client_pins) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/bulacs/public_html/smartphysio/admin/api/lib/Cake/Cache/Engine/FileEngine.php on line 254
