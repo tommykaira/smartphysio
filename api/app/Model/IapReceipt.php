@@ -1,12 +1,5 @@
 <?php
 App::uses('AppModel', 'Model');
-/**
- * User Model
- *
- * @property AdminPin $AdminPin
- * @property ClientPin $ClientPin
- * @property PracticeLogo $PracticeLogo
- */
 class IapReceipt extends AppModel {
     public $useTable = 'iap_receipts';
 
