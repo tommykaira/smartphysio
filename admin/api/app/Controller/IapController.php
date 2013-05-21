@@ -1,32 +1,59 @@
 <?php
 App::uses('AppController', 'Controller');
 
-class IapController extends AppController{	
+class IapController extends AppController
+{
+	
+	
+	
+	
+	
+	public function index()
+	{
+		
+	}
 
-    public function index(){
 
-    }
 
-    public function verify_receipt(){
-        $this->layout = 'ajax';
-        $result = '';
-        if($this->request->is('post')){
-            $raw_data = $this->request->input(); //get raw json post data
-            $this->loadModel('IapReceipt');
-            $result = $this->IapReceipt->verifyReceipt($raw_data);
+
+	/**
+	 * Method that handles verifying of receipts
+	 * 
+	 *	json format
+	 *	{
+	 * 		"receipt-data" : "(base64 encoded receipt data)",
+	 * 		"pin"   : "12345"
+	 *  }
+	 * 
+	 */
+	public function verify_receipt()
+	{
+		$this->layout 	= 'ajax';
+		$result 		= '';
+		
+		if($this->request->is('post'))
+		{
+			//-- get raw json post data --//
+			$raw_data 	= $this->request->input();
+			
+			//-- Load Model --//
+			$this->loadModel('IapReceipt');
+			
+			$result = $this->IapReceipt->verifyReceipt($raw_data);
         }
+        
         $this->set(compact('result'));
-    }
+	}
 
-    public function _update_expiry(){
+
+
+
+
+	/**
+	 * Method that updates the expiration date of the subscription
+	 */
+	public function _update_expiry()
+    {
 
     }
 }
-
-/*
- json format
- {
-    "receipt-data" : "(base64 encoded receipt data)",
-    "pin"   : "12345"
- }
- */
