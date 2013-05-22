@@ -56,7 +56,7 @@ class IapReceipt extends AppModel
 	            // Get subscription type based on receipt
                 App::uses('IapProduct', 'Model');
                 $iap = new IapProduct();
-                $product = $iap->findByAppleProductId($result['product_id']);
+                $product = $iap->findByAppleProductId($result['receipt']['product_id']);
 
 				//-- Update expiry date --//
 				$newExpiryDate				= strtotime(date("Y-m-d", strtotime(date('Y-m-d'))) . "+". $product['IapProduct']['duration']);
