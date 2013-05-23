@@ -111,12 +111,14 @@ class IapReceipt extends AppModel
                 )
             )
         ));
-
+        $ret = "";
         foreach($users_receipt as $u){
             if(empty($u['IapReceipt'])) continue;
             $data_str = '{"receipt-data" : "' . $u['IapReceipt']['0']['receipt'] . '" , "pin": "' . $u['IapReceipt']['0']['pin'] . '"}';
             $result = $this->verifyReceipt($data_str);
-            echo json_encode($result); //tmp display result
+            $ret = json_encode($result) . "\n";
         }
+
+        return $ret;
     }
 }

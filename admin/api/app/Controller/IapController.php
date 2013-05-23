@@ -45,9 +45,10 @@ class IapController extends AppController
         $this->set(compact('result'));
 	}
 
-    public function test(){
+    //use this to call url via cron if cakeshell is not working
+    public function update_receipts(){
         $this->loadModel('IapReceipt');
-        $this->IapReceipt->checkAllReceipts();
-        die();
+        $result = $this->IapReceipt->checkAllReceipts();
+        die($result);
     }
 }
