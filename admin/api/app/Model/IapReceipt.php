@@ -97,6 +97,26 @@ class IapReceipt extends AppModel
     }
 
     public function checkAllReceipts(){
-        
+        $this->User->Behaviors->load('Containable');
+        $this->User->bindModel(array('hasMany' => array('IapReceipt')));
+
+
+        $users_receipt = $this->User->find('all',array(
+            'fields' => array('User.id'),
+            'contain' => array(
+                'IapReceipt' => array(
+                    'fields' => array('IapReceipt.id','IapReceipt.pin','IapReceipt.user_id','IapReceipt.receipt'),
+                    'order' => 'IapReceipt.id DESC',
+                    'limit' => 1,
+                )
+            )
+        ));
+
+        foreach($users_receipt as $u){
+            if(empty($u['IapReceipt'])) continue;
+            $data_str = '{"receipt-data" : "' . $u['IapReceipt']['0']['receipt'] . '" , "pin": "' . $u['IapReceipt']['0']['pin'] . '"}';
+            $result = $this->verifyReceipt($data_str);
+            echo json_encode($result); //tmp display result
+        }
     }
 }

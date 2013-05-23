@@ -45,15 +45,9 @@ class IapController extends AppController
         $this->set(compact('result'));
 	}
 
-
-
-
-
-	/**
-	 * Method that updates the expiration date of the subscription
-	 */
-	public function _update_expiry()
-    {
-
+    public function test(){
+        $this->loadModel('IapReceipt');
+        $this->IapReceipt->checkAllReceipts();
+        die();
     }
 }
