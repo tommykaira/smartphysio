@@ -4,12 +4,15 @@ App::uses('AppModel', 'Model');
 class IapReceipt extends AppModel 
 {
 	public $useTable = 'iap_receipts';
+    public $belongsTo = array('User');
 
 	//-- sandbox --//
 	public $url = 'https://sandbox.itunes.apple.com/verifyReceipt';
-	
+
 	//-- production --//
 	//  public $url = 'https://buy.itunes.apple.com/verifyReceipt';
+
+    public $pass = '483736fe0ff04c90a9081313f65b4981';
 
 	public function verifyReceipt($data)
 	{
@@ -28,57 +31,72 @@ class IapReceipt extends AppModel
 		 */
 		 
 		//-- Get Client Details --//
-		$User 	= ClassRegistry::init('User');
-		$client = $User->ClientPin->findByPin($data_arr['pin']);
+		$client = $this->User->ClientPin->findByPin($data_arr['pin']);
 		
 		if($client)
 		{
 			App::uses('HttpSocket', 'Network/Http');
-			$post_data 	= '{"receipt-data" : "'.$data_arr['receipt-data'].'"}';
-			$http 		= new HttpSocket();		
+			$post_data 	= '{"receipt-data" : "' . $data_arr['receipt-data'] . '" , "password": "' . $this->pass . '"}';
+			$http 		= new HttpSocket();
 			$result 	= $http->post($this->url,$post_data);
 			
 			//-- save records --//
 			$iap_data = array(
 				'pin'       => $data_arr['pin'],
+                'user_id'   => $client['ClientPin']['user_id'],
+                'receipt'   => $data_arr['receipt-data'],
 				'raw_rcv'   => $data,
-				'raw_reply' => $result->body);
+				'raw_reply' => $result->body,
+            );
 			
 			$this->save($iap_data);
 			
 			$result = json_decode($result->body,TRUE);
-			
-			if($result['status'] == '0')
-			{
-				//-- Get Expiry Details --//
-				$expiry = $User->ExpiryDate->findByUserId($client['ClientPin']['user_id']);
 
-	            // Get subscription type based on receipt
-                App::uses('IapProduct', 'Model');
-                $iap = new IapProduct();
-                $product = $iap->findByAppleProductId($result['receipt']['product_id']);
+            switch($result['status']){
+                case "0":
+                    $return = $this->setExpiry(
+                        $client['ClientPin']['user_id'],
+                        $result['latest_receipt_info']['expires_date_formatted']
+                    );
+                    break;
+                //-- Valid Receipt but expired --//
+                case "21006":
+                    $return = $this->setExpiry(
+                        $client['ClientPin']['user_id'],
+                        $result['latest_expired_receipt_info']['expires_date_formatted'],
+                        'Subscription Expired'
+                    );
+                    break;
+                default:
+                    $return = array('msg'=>'error','status' => $result['status']);
+                    break;
 
-				//-- Update expiry date --//
-				$newExpiryDate				= strtotime(date("Y-m-d", strtotime(date('Y-m-d'))) . "+". $product['IapProduct']['duration']);
-				$expiryData['ExpiryDate'] 	= array('expiry' => date('Y-m-d H:i:s', $newExpiryDate));
-	
-				$User->ExpiryDate->id 		= $expiry['ExpiryDate']['id'];
-				$User->ExpiryDate->save($expiryData);
-	
-				$return = array('msg'=>'success');
-			}
-			else
-			{
-				$return = array('msg'=>'error','status' => $result['status']);
-			}
+            }
+
 		}
 		else
 		{
 			$return = array('msg'=>'error','status' => 'Invalid PIN.');
 		}
-		
-		
-
         return $return;
+    }
+
+    public function setExpiry($user_id,$expiry_date,$msg = 'success'){
+        //-- Get Expiry Details --//
+        $expiry = $this->User->ExpiryDate->findByUserId($user_id);
+
+        //-- Update expiry date --//
+        $newExpiryDate				= strtotime(date("Y-m-d H:i:s", strtotime($expiry_date)));
+        $expiryData['ExpiryDate'] 	= array('expiry' => date('Y-m-d H:i:s', $newExpiryDate));
+
+        $this->User->ExpiryDate->id 		= $expiry['ExpiryDate']['id'];
+        $this->User->ExpiryDate->save($expiryData);
+
+        return array('msg' => $msg);
+    }
+
+    public function checkAllReceipts(){
+        
     }
 }
