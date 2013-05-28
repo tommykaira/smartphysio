@@ -3,11 +3,7 @@ App::uses('AppController', 'Controller');
 
 class IapController extends AppController
 {
-	
-	
-	
-	
-	
+
 	public function index()
 	{
 		
@@ -45,10 +41,21 @@ class IapController extends AppController
         $this->set(compact('result'));
 	}
 
-    //use this to call url via cron if cakeshell is not working
-    public function update_receipts(){
-        $this->loadModel('IapReceipt');
-        $result = $this->IapReceipt->checkAllReceipts();
-        die($result);
-    }
+
+
+
+
+	/**
+	 * Method that updates the user accounts subscriptions
+	 *  
+	 * use this to call url via cron if cakeshell is not working
+	 */
+	public function update_receipts()
+	{
+		$this->loadModel('IapReceipt');
+		
+		$result = $this->IapReceipt->checkAllReceipts();
+		
+		die($result);
+	}
 }
