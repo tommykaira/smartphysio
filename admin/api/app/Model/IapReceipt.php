@@ -7,10 +7,10 @@ class IapReceipt extends AppModel
     public $belongsTo 	= array('User');
 
 	//-- sandbox --//
-	public $url = 'https://sandbox.itunes.apple.com/verifyReceipt';
+	// public $url = 'https://sandbox.itunes.apple.com/verifyReceipt';
 
 	//-- production --//
-	//  public $url = 'https://buy.itunes.apple.com/verifyReceipt';
+	public $url = 'https://buy.itunes.apple.com/verifyReceipt';
 
     public $pass = '483736fe0ff04c90a9081313f65b4981';
 
