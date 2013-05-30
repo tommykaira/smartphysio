@@ -35,3 +35,15 @@
 	
 	
 })(jQuery);
+
+$(document).ready(function() {
+		//* datepicker
+		gebo_datepicker.init();
+});
+
+//* bootstrap datepicker
+	gebo_datepicker = {
+		init: function() {
+			$('#dp1').datepicker({format: "dd/mm/yyyy"});
+		}
+	};

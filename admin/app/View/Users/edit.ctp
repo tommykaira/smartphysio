@@ -15,6 +15,11 @@
 		echo $this->Form->input('postcode');
 		echo $this->Form->input('country');
 		echo $this->Form->input('services');
+		
+		$expiry_date = date('d/m/Y',strtotime($this->request->data['ExpiryDate']['expiry']));
+		echo $this->Form->hidden('ExpiryDate.user_id');
+		echo $this->Form->hidden('ExpiryDate.id');
+		echo $this->Form->input('ExpiryDate.expiry',array('id'=>'dp1','value'=>$expiry_date));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

@@ -32,12 +32,14 @@ class UsersController extends AppController {
 		);
 
 		$this->FilterResults->setPaginate('order', 'User.first_name ASC'); // optional
-		$this->FilterResults->setPaginate('limit', 10);              // optional
+		$this->FilterResults->setPaginate('limit', 20);              // optional
+		$this->FilterResults->setPaginate('recursive', 2);              // optional
+		
 
 		// Define conditions
 		$this->FilterResults->setPaginate('conditions', $this->FilterResults->getConditions());
 
-		$this->User->recursive = 0;
+		$this->User->recursive = 2;
 		$this->set('users', $this->paginate());
 	}
 
@@ -98,19 +100,32 @@ class UsersController extends AppController {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
-		$this->User->id = $id;
-		if (!$this->User->exists()) {
+	public function edit($id = null) 
+	{
+		$this->User->recursive 	= 2;
+		$this->User->id 		= $id;
+		
+		if (!$this->User->exists()) 
+		{
 			throw new NotFoundException(__('Invalid user'));
 		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->User->save($this->request->data)) {
+		
+		if ($this->request->is('post') || $this->request->is('put')) 
+		{
+			$this->request->data['ExpiryDate']['expiry'] = (string)date('Y-m-d H:i:s',strtotime(str_replace('/', '-', $this->request->data['ExpiryDate']['expiry'])));
+
+			if ($this->User->ExpiryDate->save($this->request->data)) 
+			{
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
-			} else {
+			} 
+			else 
+			{
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'),'default', array('class' => 'alert alert-error'));
 			}
-		} else {
+		} 
+		else 
+		{
 			$this->request->data = $this->User->read(null, $id);
 		}
 	}

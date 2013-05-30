@@ -19,7 +19,8 @@
     			'splashy/splashy',
     			'flags/flags',
     			'lib/fullcalendar/fullcalendar_gebo',
-    			'style'
+    			'style',
+    			'lib/datepicker/datepicker'
     		));
     	?>
        			
@@ -232,6 +233,7 @@
             		'ios-orientationchange-fix',
             		'lib/antiscroll/antiscroll',
             		'lib/antiscroll/jquery-mousewheel',
+            		'lib/datepicker/bootstrap-datepicker.min.js',
             		'gebo_common',
             		'bootstrap.plugins.min',
             		'forms/jquery.autosize.min',

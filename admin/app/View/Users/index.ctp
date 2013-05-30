@@ -14,12 +14,13 @@
 						<th><?php echo $this->Paginator->sort('last_name'); ?></th>
 						<th><?php echo $this->Paginator->sort('number'); ?></th>
 						<th><?php echo $this->Paginator->sort('created'); ?></th>
+						<th><?php echo $this->Paginator->sort('ExpiryDate.expiry','Expiry'); ?></th>
 						<th class="actions"><?php echo __('Actions'); ?></th>
 					</tr>
 				</thead>
 
 				<tbody role="alert" aria-live="polite" aria-relevant="all">
-					<?php foreach ($users as $user): ?>
+					<?php foreach ($users as $user):?>
 					<tr>
 						<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 						<td><?php echo h($user['User']['practice_name']); ?>&nbsp;</td>
@@ -28,6 +29,7 @@
 						<td><?php echo h($user['User']['last_name']); ?>&nbsp;</td>
 						<td><?php echo h($user['User']['number']); ?>&nbsp;</td>
 						<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
+						<td><?php echo h($user['ExpiryDate']['expiry']); ?>&nbsp;</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<i class="icon-eye-open"></i>', array('action' => 'view', $user['User']['id']), array('escape' => FALSE,'title' => 'View')); ?>
 							<?php echo $this->Html->link('<i class="icon-pencil"></i>', array('action' => 'edit', $user['User']['id']), array('escape' => FALSE, 'title' => 'Edit')); ?>
