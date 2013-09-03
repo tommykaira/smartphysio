@@ -574,10 +574,15 @@ class UsersController extends AppController{
 				$this->User->PracticeLogo->save($logotmp);
 				
 				// subscribe to 1month
-				$dateToOneMonth = strtotime(date("Y-m-d", strtotime(date('Y-m-d'))) . "+1 month");
+				// $dateToOneMonth = strtotime(date("Y-m-d", strtotime(date('Y-m-d'))) . "+1 month");
+				
+				//-- Modified to set the expiry date to yesterday --//
+
+				$dateToYesterday		  = strtotime( '-1 days' );
+
 				$expiryData['ExpiryDate'] = array(
 					'user_id' => $userId,
-					'expiry' => date('Y-m-d H:i:s', $dateToOneMonth)
+					'expiry' => date('Y-m-d H:i:s', $dateToYesterday)
 				);
 				$this->User->ExpiryDate->save($expiryData);
 				
